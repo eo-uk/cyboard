@@ -44,8 +44,8 @@ function insertText(text) {
         const start = active.selectionStart;
         const end = active.selectionEnd;
 
-        active.value = active.value.slice(0, start) + out + active.value.slice(end);
-        active.selectionStart = active.selectionEnd = start + out.length;
+        active.value = active.value.slice(0, start) + text + active.value.slice(end);
+        active.selectionStart = active.selectionEnd = start + text.length;
 
         active.dispatchEvent(new Event("input", { bubbles: true }));
 
