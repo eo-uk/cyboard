@@ -13,11 +13,11 @@ document.addEventListener("keydown", function(e) {
     if (e.key.length === 1) {
         const lower = e.key.toLowerCase();
 
-        if (window.cyboard.CYRILLIC_MAP[lower]) {
+        if (cyboard.CYRILLIC_MAP[lower]) {
             e.preventDefault();
             e.stopPropagation();
 
-            let out = window.cyboard.CYRILLIC_MAP[lower];
+            let out = cyboard.CYRILLIC_MAP[lower];
 
             // output uppercase if shift is pressed
             if (e.shiftKey) {
@@ -44,13 +44,8 @@ function insertText(text) {
         const start = active.selectionStart;
         const end = active.selectionEnd;
 
-        const before = active.value.substring(0, start);
-        const after  = active.value.substring(end);
-
-        active.value = before + text + after;
-
-        // set cursor
-        active.selectionStart = active.selectionEnd = start + text.length;
+        active.value = active.value.slice(0, start) + out + active.value.slice(end);
+        active.selectionStart = active.selectionEnd = start + out.length;
 
         active.dispatchEvent(new Event("input", { bubbles: true }));
 
