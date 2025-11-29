@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Cyboard",
+  "version": "1.0",
+  "description": "Maps Latin alphabet key strokes to Cyrillic counterparts.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["setup.js", "content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
