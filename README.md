@@ -1,0 +1,44 @@
+# Cyboard
+Chromium extension to map Latin alphabet key strokes to Cyrillic counterparts.
+
+Only works with input and textarea elements.
+
+## Usage
+Hit CTRL+SHIFT to enable/disable Cyrillic mode.
+
+## Mappings
+| Latin    | Cyrillic |
+| -------- | -------- |
+|    a     |     а    |
+|    b     |     б    |
+|    v     |     в    |
+|    g     |     г    |
+|    d     |     д    |
+|    e     |     е    |
+|    z     |     з    |
+|    i     |     и    |
+|    k     |     к    |
+|    l     |     л    |
+|    m     |     м    |
+|    n     |     н    |
+|    o     |     о    |
+|    p     |     п    |
+|    r     |     р    |
+|    s     |     с    |
+|    t     |     т    |
+|    u     |     у    |
+|    f     |     ф    |
+|    h     |     х    |
+|    y     |     ы    |
+|    c     |     ц    |
+|    j     |     ж    |
+|    1     |     й    |
+|    4     |     ч    |
+|    3     |     ш    |
+|    2     |     щ    |
+|    q     |     я    |
+|    w     |     ю    |
+|    x     |     ё    |
+|    ;     |     э    |
+|    '     |     ь    |
+|    `     |     ъ    |
